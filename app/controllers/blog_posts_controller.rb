@@ -11,7 +11,7 @@ class BlogPostsController < ApplicationController
 
   def show
     api = Prismic.api('https://blog-webs.cdn.prismic.io/api/v1')
-    response = api.query(Prismic::Predicates.at("document.ud", "1"),{ "lang" => "*" })
+    response = api.query(Prismic::Predicates.at("document.id", "1"),{ "lang" => "*" })
     document = response.results[0]
   end
 
