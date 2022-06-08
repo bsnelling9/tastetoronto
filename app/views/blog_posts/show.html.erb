@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+
+<div class ='posts' id="posts">
+  <div class="posts__wrapper">
+    <div class="card">
+      <h2 class="card__title"><%= post['brodie.title'].as_text() %></h2>
+      <p class="card__author">Author: <%= post['brodie.user'].as_text() %></p>
+      <p class="card__content"><%= post['brodie.content1'].as_text() %></p>
+    </div>
+  </div>
+</div>
