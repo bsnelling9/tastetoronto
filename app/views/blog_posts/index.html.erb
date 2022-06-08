@@ -10,7 +10,7 @@
       <p class="card__author">Author: <%= document.id %></p>
       <p class="card__author">Author: <%= document['brodie.user'].as_text() %></p>
       <p class="card__content"><%= document['brodie.content1'].as_text() %></p>
-      <%= link_to "Full Article", blog_post_show_path(document.id) %>
+      <%#= link_to "Full Article", blog_post_show_path(id: document.id) %>
     </div>
     <% end %>
   </div>
