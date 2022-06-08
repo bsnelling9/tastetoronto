@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+
+<div class ='posts' id="posts">
+  <div class="posts__wrapper">
+    <h1>Blog Posts</h1>
+    <%= @documents.each do |document| %>
+    <div class="card">
+      <h2 class="card__title"><%= document['brodie.title'].as_text() %></h2>
+      <p class="card__author">Author: <%= document['brodie.user'].as_text() %></p>
+      <p class="card__content"><%= document['brodie.content1'].as_text() %></p>
+      <%#= link_to document['brodie.title'], document %>
+    </div>
+    <% end %>
+  </div>
+</div>
